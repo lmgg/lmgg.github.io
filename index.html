@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<title>LGG</title>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="rotate.js"></script>
+</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 100;
+  background-color: #0F083B;
+}
+* {  padding: 0;   margin: 0;}
+
+/*Heading*/
+.heading-align {margin: auto; padding-top: 300px; padding-bottom: 500px; width: 100%; height: 20px; left: 50%;}
+.heading1, .background {margin: auto; position: absolute; width: 80%; font-family: serif;}
+.heading1 {color: #0F083B; text-shadow: -1px 1px 2px #4120FA, 1px 1px 2px #4120FA, 1px -1px 0 #4120FA,-1px -1px 0 #4120FA;}
+.lucy-b, .gg-b {z-index: -10; margin: auto; color: #4120FA; right: 0px;}
+.lucy-b, .lucy-front {top: 200px; left: 0; bottom: 350px; margin: auto; font-size: 100px;}
+.lucy-front, .gg-front {margin: auto; right: 0px; left: 0px;}
+.gg-b {top: 370px; left: 0px; bottom:250px; text-align: right; font-size: 80px;}
+.gg-front {top: 370px; bottom:250px; text-align: right; font-size: 80px;}
+h1 {display:inline-block;}
+
+ p {color: blue; font-style: italic; width: 10%; text-align: right; border: 1px solid blue; margin-left: auto; margin-right: 20%; padding: 5px; margin-top: 10%;}
+
+</style>
+</head>
+<p class="reset">RESET</p>
+
+<div class="heading-align">
+  <div class="heading1 lucy-front">
+    <h1 class="left">L</h1><h1 class="vowel">u</h1><h1 class="left">c</h1><h1 class="y">y</h1>
+  </div>
+  <div class="heading1 gg-front">
+    <h1 class="left">G</h1><h1 class="left">r</h1><h1 class="vowel">e</h1><h1 class="y">y</h1><h1 class="vowel">-</h1>
+    <h1 class="left">G</h1><h1 class="vowel">a</h1><h1 class="left"> r </h1><h1 class="left">d</h1><h1 class="left">n</h1><h1 class="vowel">e</h1><h1 class="left">r</h1>
+  </div>
+  <div class="background lucy-b">
+    <h1>L</h1><h1>u</h1><h1>c</h1><h1>y</h1>
+  </div>
+  <div class="background gg-b">
+    <h1>G</h1><h1>r</h1><h1>e</h1><h1>y</h1><h1>-</h1>
+    <h1>G</h1><h1>a</h1><h1>r</h1><h1>d</h1><h1>n</h1><h1>e</h1><h1>r</h1>
+  </div>
+</div>
+
+<script>
+$(document).ready(function(){
+
+  var val0 = 10
+  $(".heading1 .y").rotate({
+    bind:
+    {
+      mouseover: function(){
+        if (val0 >= 400 || val0 <= -360) {
+        val0 = -10;
+        }else {
+          val0 +=180;
+        }
+        $(this).rotate({ animateTo:val0, duration:10000})
+      }
+    }
+  });
+
+  var val = 0
+  $(".heading1 .vowel").rotate({
+    bind:
+    {
+      mouseover: function(){
+        if (val >= 360) {
+        val = 0;
+        }else {
+          val +=90;
+        }
+        $(this).rotate({ animateTo:val, duration:5000})
+      }
+    }
+  });
+
+  var val1 = 0
+  $(".heading1 .left").rotate({
+    bind:
+    {
+      mouseover: function(){
+        if (val1 < -360) {
+        val1 = 0;
+        }else {
+          val1 +=-20;
+        }
+        $(this).rotate({ animateTo:val1, duration:1000})
+      }
+    }
+  });
+
+  $(".reset").rotate({bind:{
+    mouseover: function(){
+      $(".heading1 h1").rotate({animateTo:-0, duration:1000,})
+    }
+  }
+  });
+
+});
+</script>
+
+</body>
+</html>
