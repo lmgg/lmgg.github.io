@@ -43,35 +43,3 @@ const REQUIREMENT_CONTENT = {
     main_en: (job) => `Imagine you're at the stand for "${job.titel}" and someone stops by. Explain in 2–3 sentences what it's about:\n"${job.beschreibung_freitext}"`,
   },
 };
-
-// Adaptive opening question: a few fixed conditions, not ML. The chosen
-// option reorders which category questions come first and adds a light hint
-// for students with little/no formal work history.
-const OPENING_OPTIONS = [
-  {
-    id: 'service',
-    text_de: 'Ich habe schon im Service / in der Gastronomie gearbeitet (Kellnern, Catering, Events).',
-    text_en: 'I’ve worked in service / hospitality before (waiting tables, catering, events).',
-    priority: ['gastkontakt', 'tablett_service', 'selbststaendig', 'aktive_ansprache', 'produkterklaerung'],
-  },
-  {
-    id: 'sales',
-    text_de: 'Ich habe im Verkauf, in der Promotion oder mit viel Kundenkontakt gearbeitet.',
-    text_en: 'I’ve worked in sales, promotion, or with a lot of customer contact.',
-    priority: ['aktive_ansprache', 'produkterklaerung', 'gastkontakt', 'selbststaendig', 'tablett_service'],
-  },
-  {
-    id: 'physical',
-    text_de: 'Ich hatte vor allem körperliche/handwerkliche Tätigkeiten (z. B. Umzüge, Lager, Sport).',
-    text_en: 'I’ve mostly done physical/manual work (e.g. moving, warehouse work, sport).',
-    priority: ['tablett_service', 'selbststaendig', 'gastkontakt', 'aktive_ansprache', 'produkterklaerung'],
-  },
-  {
-    id: 'other',
-    text_de: 'Ich habe bisher vor allem im Büro/an der Uni gearbeitet oder noch gar nicht gejobbt.',
-    text_en: 'I’ve mostly worked in an office/at university, or haven’t had a job yet.',
-    priority: ['selbststaendig', 'gastkontakt', 'aktive_ansprache', 'tablett_service', 'produkterklaerung'],
-    hint_de: 'Auch nicht-berufliche Erfahrungen zählen – Ehrenamt, Verein, Familie, Alltag.',
-    hint_en: 'Non-work experience counts too — volunteering, clubs, family, everyday life.',
-  },
-];

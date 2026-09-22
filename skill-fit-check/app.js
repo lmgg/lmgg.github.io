@@ -14,7 +14,6 @@ let DB = null;
 const STATE = {
   screen: 'home',
   studentId: 'S-3001',
-  openingChoiceId: null,
   answerLanguage: null,
   languageForced: false,
   questionQueue: [],
@@ -36,13 +35,6 @@ function unionRequirementCodes() {
   return Array.from(set).filter((c) => DB.requirements[c].art !== 'sprache');
 }
 
-function buildQuestionQueue(openingChoiceId) {
-  const codes = unionRequirementCodes();
-  const option = OPENING_OPTIONS.find((o) => o.id === openingChoiceId) || OPENING_OPTIONS[3];
-  const order = option.priority.filter((c) => codes.includes(c));
-  codes.forEach((c) => { if (!order.includes(c)) order.push(c); });
-  return order;
-}
 
 function anySprachRequirementMeta() {
   const codes = new Set();
@@ -69,7 +61,6 @@ function render() {
   app.innerHTML = '';
   const screens = {
     home: renderHome,
-    opening: renderOpening,
     language: renderLanguage,
     category: renderCategory,
     results: renderResults,
@@ -129,49 +120,21 @@ function renderHome() {
     render();
   });
   document.getElementById('startBtn').addEventListener('click', () => {
-    STATE.screen = 'opening';
+    STATE.questionQueue = unionRequirementCodes();
+    STATE.qIndex = 0;
+    STATE.showingFollowUp = false;
+    STATE.answers = {};
+    const meta = anySprachRequirementMeta();
+    if (meta) {
+      const level = currentStudent()[meta.profileField] || 'keine Angabe';
+      STATE.languageForced = CEFR_RANK[level] >= CEFR_RANK[meta.level];
+      if (STATE.languageForced) STATE.answerLanguage = meta.lang;
+      STATE.screen = 'language';
+    } else {
+      STATE.answerLanguage = 'de';
+      STATE.screen = 'category';
+    }
     render();
-  });
-}
-
-// ------------------------------------------------------------------- OPENING
-
-function renderOpening() {
-  const optionsHtml = OPENING_OPTIONS.map((o) => `
-    <button class="option-card" data-id="${o.id}">${o.text_de}</button>
-  `).join('');
-
-  frame(`
-    <div class="eyebrow">Skill Fit Check</div>
-    <h2 class="q-title">Bevor es losgeht: Was für Erfahrung bringst du am ehesten mit?</h2>
-    <p class="muted">Das hilft uns, die passendsten Fragen zuerst zu stellen.</p>
-    <div class="option-list">${optionsHtml}</div>
-  `, { back: () => { STATE.screen = 'home'; render(); } });
-
-  document.querySelectorAll('.option-card').forEach((btn) => {
-    btn.addEventListener('click', () => {
-      STATE.openingChoiceId = btn.dataset.id;
-      STATE.questionQueue = buildQuestionQueue(btn.dataset.id);
-      STATE.qIndex = 0;
-      STATE.showingFollowUp = false;
-      STATE.answers = {};
-      const meta = anySprachRequirementMeta();
-      if (meta) {
-        const level = currentStudent()[meta.profileField] || 'keine Angabe';
-        if (CEFR_RANK[level] >= CEFR_RANK[meta.level]) {
-          STATE.answerLanguage = meta.lang;
-          STATE.languageForced = true;
-          STATE.screen = 'language';
-        } else {
-          STATE.languageForced = false;
-          STATE.screen = 'language';
-        }
-      } else {
-        STATE.answerLanguage = 'de';
-        STATE.screen = 'category';
-      }
-      render();
-    });
   });
 }
 
@@ -188,7 +151,7 @@ function renderLanguage() {
       <h2 class="q-title">Dein Profil zeigt Deutsch auf Niveau „${level}".</h2>
       <p class="muted">Ein Job hier verlangt ${meta.label_de}. Statt dich erneut nach deinem Niveau zu fragen, beantwortest du die folgenden Fragen einfach auf Deutsch — deine Antworten sind der Nachweis.</p>
       <button class="cta-btn" id="okBtn">Verstanden, weiter auf Deutsch</button>
-    `, { back: () => { STATE.screen = 'opening'; render(); } });
+    `, { back: () => { STATE.screen = 'home'; render(); } });
     document.getElementById('okBtn').addEventListener('click', () => {
       STATE.screen = 'category';
       render();
@@ -204,7 +167,7 @@ function renderLanguage() {
       <button class="option-card" data-lang="de">Auf Deutsch antworten</button>
       <button class="option-card" data-lang="en">Answer in English</button>
     </div>
-  `, { back: () => { STATE.screen = 'opening'; render(); } });
+  `, { back: () => { STATE.screen = 'home'; render(); } });
 
   document.querySelectorAll('[data-lang]').forEach((btn) => {
     btn.addEventListener('click', () => {
@@ -238,7 +201,7 @@ function renderCategory() {
   `, { back: () => {
     if (showingFollowUp) { STATE.showingFollowUp = false; }
     else if (STATE.qIndex > 0) { STATE.qIndex -= 1; }
-    else { STATE.screen = 'opening'; }
+    else { STATE.screen = 'home'; }
     render();
   } });
 
