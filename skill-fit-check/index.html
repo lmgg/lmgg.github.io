@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Skill Fit Check — ucm</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app"></div>
+
+<!-- Data layer: parses the provided CSVs (static/in-memory only, no backend). -->
+<script src="data.js"></script>
+<!-- Core abstraction: one evaluation method per requirement `art`, reused across every job. -->
+<script src="engine.js"></script>
+<!-- Per-requirement question text + topic keywords, and the adaptive opening question. -->
+<script src="questions.js"></script>
+<!-- UI controller. -->
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+student_id,vorname,nachname_initial,stadt,geburtsjahr,studienfach,sprache_deutsch,sprache_englisch,registriert_am,screening_bestanden,einsaetze_bisher,kundenbewertungen
+S-3001,Viktor,L.,Berlin,2006,Wirtschaftswissenschaften,C1,C1,2026-09-17,ja,0,0
+S-3002,Carla,C.,Köln,2005,Soziale Arbeit,B2,B1,2026-09-17,ja,0,0
+S-3003,Nele,G.,Berlin,2006,Biologie,B1,C1,2026-09-07,ja,0,0
+S-3004,Zoe,F.,Berlin,2002,Maschinenbau,muttersprachlich,B1,2026-09-03,ja,0,0
+S-3005,Hakan,D.,Berlin,2005,Psychologie,muttersprachlich,B1,2026-09-09,ja,0,0
+S-3006,Pia,A.,Berlin,2006,Wirtschaftswissenschaften,muttersprachlich,keine Angabe,2026-09-02,ja,0,0
+S-3007,Pia,E.,Berlin,2001,Lehramt,B2,B2,2026-09-01,ja,0,0
+S-3008,Ulla,Z.,Berlin,2006,Design,C1,B2,2026-09-11,ja,0,0
+S-3009,Pia,S.,Berlin,2002,Informatik,B2,B1,2026-09-20,ja,0,0
+S-3010,Lena,K.,Berlin,2000,Lehramt,B2,keine Angabe,2026-09-07,ja,0,0
+S-3011,Finn,L.,Berlin,2002,Psychologie,C1,C1,2026-09-04,ja,0,0
+S-3012,Carla,W.,Köln,2006,Wirtschaftswissenschaften,C1,B2,2026-09-04,ja,0,0
+S-3013,Wanda,T.,Berlin,2003,Rechtswissenschaft,muttersprachlich,B1,2026-09-18,ja,0,0
+S-3014,Rahel,D.,Berlin,2000,Wirtschaftswissenschaften,muttersprachlich,C1,2026-09-01,ja,0,0
+S-3015,Sven,D.,Berlin,2005,Soziale Arbeit,muttersprachlich,B2,2026-09-11,ja,0,0
+S-3016,Xenia,B.,Hamburg,2004,Biologie,B2,C1,2026-09-19,ja,0,0
+S-3017,Hanna,P.,Frankfurt am Main,2004,Psychologie,C1,keine Angabe,2026-09-09,ja,0,0
+S-3018,Ben,L.,Frankfurt am Main,1998,Wirtschaftswissenschaften,muttersprachlich,B2,2026-09-18,ja,0,0
+S-3019,Tomke,K.,München,2001,Soziale Arbeit,B2,C1,2026-09-01,ja,0,0
+S-3020,Zoe,I.,Berlin,1999,Soziale Arbeit,B2,B1,2026-09-13,ja,0,0
+S-3021,Jonas,E.,Hamburg,2005,Maschinenbau,B2,keine Angabe,2026-09-10,ja,0,0
+S-3022,Kevin,P.,Hamburg,2005,Design,muttersprachlich,C1,2026-09-21,ja,0,0
+S-3023,Greta,N.,Berlin,2002,Rechtswissenschaft,muttersprachlich,B2,2026-09-17,ja,0,0
+S-3024,Samir,W.,Hamburg,2005,Rechtswissenschaft,B2,B1,2026-09-17,ja,0,0
+S-3025,Ilias,I.,Hamburg,2003,Soziale Arbeit,muttersprachlich,B1,2026-09-09,ja,0,0
+S-3026,Yusuf,J.,Hamburg,2006,Biologie,muttersprachlich,B2,2026-09-08,ja,0,0
+S-3027,Anton,A.,Berlin,2000,Biologie,muttersprachlich,C1,2026-09-10,ja,0,0
+S-3028,Mira,I.,Hamburg,2004,Wirtschaftswissenschaften,B1,C1,2026-09-19,ja,0,0
+S-3029,Paul,J.,Berlin,2001,Rechtswissenschaft,muttersprachlich,B1,2026-09-04,ja,0,0
+S-3030,Fiona,L.,Hamburg,2000,Wirtschaftswissenschaften,C1,B2,2026-09-10,ja,0,0
+S-3031,Gustav,K.,Berlin,2000,Design,B2,B2,2026-09-08,ja,0,0
+S-3032,Emil,G.,Köln,2003,Psychologie,C1,C1,2026-09-10,ja,0,0
+S-3033,Cem,G.,Hamburg,2005,Design,muttersprachlich,B1,2026-09-09,ja,0,0
+S-3034,Marek,W.,Hamburg,2000,Psychologie,muttersprachlich,B2,2026-09-10,ja,0,0
+S-3035,Yusuf,E.,Hamburg,1999,Soziale Arbeit,C1,B1,2026-09-19,ja,0,0
+S-3036,Kevin,S.,Hamburg,2000,Rechtswissenschaft,B2,C1,2026-09-10,ja,0,0
+S-3037,Alina,A.,Köln,2002,Rechtswissenschaft,C1,keine Angabe,2026-09-07,ja,0,0
+S-3038,Sven,A.,Frankfurt am Main,1999,Soziale Arbeit,B1,B2,2026-09-12,ja,0,0
+S-3039,Alina,W.,Köln,2003,Biologie,C1,B1,2026-09-21,ja,0,0
+S-3040,Paul,A.,Hamburg,2003,Soziale Arbeit,muttersprachlich,B2,2026-09-09,ja,0,0
+S-3041,Fiona,H.,Hamburg,2002,Maschinenbau,B2,B1,2026-09-14,ja,0,0
+S-3042,Mira,L.,Berlin,2002,Rechtswissenschaft,B1,C1,2026-09-19,ja,0,0
+S-3043,Luca,H.,Berlin,2004,Biologie,C1,keine Angabe,2026-09-04,ja,0,0
+S-3044,Viktor,W.,Berlin,2002,Kommunikationswissenschaft,muttersprachlich,B1,2026-09-05,ja,0,0
+S-3045,Fiona,N.,Hamburg,1999,Design,C1,C1,2026-09-17,ja,0,0
+S-3046,Finn,J.,Hamburg,2001,Wirtschaftswissenschaften,C1,B2,2026-09-04,ja,0,0
+S-3047,Alina,H.,Berlin,2000,Maschinenbau,B2,B2,2026-09-01,ja,0,0
+S-3048,Hakan,L.,Hamburg,2006,Biologie,muttersprachlich,keine Angabe,2026-09-09,ja,0,0
+S-3049,Vera,E.,Berlin,2001,Maschinenbau,B2,keine Angabe,2026-09-11,ja,0,0
+S-3050,Jonas,L.,München,2005,Informatik,B2,B2,2026-09-13,ja,0,0
+S-3051,Mira,T.,Berlin,2000,Maschinenbau,C1,C1,2026-09-14,ja,0,0
+S-3052,Ben,D.,Hamburg,2000,Psychologie,B2,B1,2026-09-16,ja,0,0
+S-3053,Tomke,Z.,Berlin,2005,Lehramt,muttersprachlich,B2,2026-09-20,ja,0,0
+S-3054,Vera,E.,Frankfurt am Main,2001,Psychologie,muttersprachlich,keine Angabe,2026-09-14,ja,0,0
+S-3055,Willem,E.,Berlin,2003,Design,B1,B1,2026-09-12,ja,0,0
+S-3056,Luca,P.,Berlin,2005,Rechtswissenschaft,C1,B2,2026-09-10,ja,0,0
+S-3057,Elif,K.,Hamburg,2004,Rechtswissenschaft,muttersprachlich,keine Angabe,2026-09-08,ja,0,0
+S-3058,Fiona,C.,Berlin,2002,Kommunikationswissenschaft,B2,B2,2026-09-17,ja,0,0
+S-3059,Mira,J.,Berlin,2000,Soziale Arbeit,muttersprachlich,B1,2026-09-04,ja,0,0
+S-3060,Vera,N.,Köln,1999,Wirtschaftswissenschaften,C1,B1,2026-09-17,ja,0,0
+S-3061,Cem,G.,Hamburg,2000,Wirtschaftswissenschaften,C1,B2,2026-09-10,ja,0,0
+S-3062,Jonas,R.,Hamburg,2002,Wirtschaftswissenschaften,B2,B2,2026-09-02,ja,0,0
+S-3063,Sven,P.,Hamburg,2001,Rechtswissenschaft,B2,B2,2026-09-07,ja,0,0
+S-3064,Yusuf,L.,Hamburg,2006,Soziale Arbeit,B1,C1,2026-09-16,ja,0,0
+S-3065,Bea,H.,Berlin,2000,Psychologie,muttersprachlich,B2,2026-09-20,ja,0,0
+S-3066,Samir,W.,Hamburg,2003,Informatik,muttersprachlich,B1,2026-09-19,ja,0,0
+S-3067,Nele,V.,Hamburg,2005,Informatik,B1,B2,2026-09-02,ja,0,0
+S-3068,Mira,K.,Berlin,2004,Design,C1,C1,2026-09-09,ja,0,0
+S-3069,Hakan,Z.,Berlin,2001,Design,muttersprachlich,B2,2026-09-17,ja,0,0
+S-3070,Umut,M.,Hamburg,2006,Soziale Arbeit,B2,B2,2026-09-21,ja,0,0
+S-3071,Sven,Z.,Köln,2002,Rechtswissenschaft,C1,B2,2026-09-20,ja,0,0
+S-3072,Mira,E.,Hamburg,2001,Rechtswissenschaft,C1,B1,2026-09-12,ja,0,0
+S-3073,Anton,L.,Hamburg,2004,Lehramt,B1,B2,2026-09-02,ja,0,0
+S-3074,Yusuf,C.,Berlin,2001,Soziale Arbeit,B2,C1,2026-09-17,ja,0,0
+S-3075,Quirin,Z.,Köln,2005,Informatik,C1,B1,2026-09-10,ja,0,0
+S-3076,Ilias,M.,München,2002,Design,muttersprachlich,keine Angabe,2026-09-19,ja,0,0
+S-3077,Emil,R.,Berlin,2004,Soziale Arbeit,muttersprachlich,B2,2026-09-18,ja,0,0
+S-3078,Elif,Z.,Berlin,2002,Wirtschaftswissenschaften,B2,B2,2026-09-19,ja,0,0
+S-3079,Zoe,G.,Köln,2000,Biologie,B2,B2,2026-09-03,ja,0,0
+S-3080,Yusuf,R.,Berlin,2003,Informatik,C1,B1,2026-09-07,ja,0,0
+S-3081,Marek,C.,Hamburg,2004,Design,B2,C1,2026-09-05,ja,0,0
+S-3082,Zeno,J.,Berlin,1998,Design,muttersprachlich,C1,2026-09-20,ja,0,0
+S-3083,Viktor,J.,Hamburg,2006,Psychologie,C1,B2,2026-09-15,ja,0,0
+S-3084,Cem,V.,Hamburg,1998,Kommunikationswissenschaft,C1,C1,2026-09-15,ja,0,0
+S-3085,Gustav,M.,Berlin,2004,Maschinenbau,C1,C1,2026-09-06,ja,0,0
+S-3086,Dana,L.,Frankfurt am Main,2002,Kommunikationswissenschaft,B1,C1,2026-09-16,ja,0,0
+S-3087,Emil,G.,Berlin,1999,Biologie,muttersprachlich,keine Angabe,2026-09-05,ja,0,0
+S-3088,Paul,I.,Hamburg,2000,Psychologie,B1,B1,2026-09-11,ja,0,0
+S-3089,Yusuf,W.,Berlin,1998,Biologie,B2,B1,2026-09-04,ja,0,0
+S-3090,Pia,Z.,Berlin,2006,Lehramt,B2,keine Angabe,2026-09-11,ja,0,0
+S-3091,Elif,A.,Hamburg,2006,Soziale Arbeit,C1,C1,2026-09-08,ja,0,0
+S-3092,Elif,W.,Hamburg,2004,Maschinenbau,muttersprachlich,C1,2026-09-18,ja,0,0
+S-3093,Umut,V.,Köln,2003,Soziale Arbeit,muttersprachlich,C1,2026-09-14,ja,0,0
+S-3094,Emil,H.,Hamburg,1998,Lehramt,C1,keine Angabe,2026-09-05,ja,0,0
+S-3095,Bea,A.,Hamburg,2002,Design,C1,B2,2026-09-12,ja,0,0
+S-3096,Dana,G.,Berlin,2006,Psychologie,muttersprachlich,keine Angabe,2026-09-04,ja,0,0
+S-3097,Yara,L.,Berlin,2003,Informatik,B2,C1,2026-09-04,ja,0,0
+S-3098,Umut,G.,Berlin,2003,Maschinenbau,muttersprachlich,keine Angabe,2026-09-06,ja,0,0
+S-3099,Tara,T.,Köln,2000,Maschinenbau,C1,B1,2026-09-11,ja,0,0
+S-3100,Alina,B.,München,1999,Maschinenbau,B2,B2,2026-09-12,ja,0,0

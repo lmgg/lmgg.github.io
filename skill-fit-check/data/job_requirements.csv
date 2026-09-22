@@ -1,0 +1,8 @@
+job_id,requirement_code,requirement_text,art
+J-1041,tablett_service,"Tablett-Service, mehrere Teller gleichzeitig",physisch
+J-1041,selbststaendig,Selbständiges Arbeiten unter Zeitdruck,verhalten
+J-1041,gastkontakt,Sicherer Umgang mit Gästen,verhalten
+J-1041,deutsch_c1,Deutsch C1,sprache
+J-1042,aktive_ansprache,Aktiv auf fremde Menschen zugehen,verhalten
+J-1042,produkterklaerung,Ein Produkt frei erklären,fachlich
+J-1042,deutsch_c1,Deutsch C1,sprache
